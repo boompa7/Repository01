@@ -103,4 +103,17 @@
 
 .footer{
     background-color: #203864;
+    padding: 1em;
+}
+.f_logo{
+    background-color: #ccc;
+    grid-column: 1 / 3;
+}
+.f_info{
+    background-color:#ccc;
+    grid-column: 3 / 10;
+}
+.fnb{
+    background-color: #ccc;
+    grid-column: 10 / 13;
 }
