@@ -1,0 +1,106 @@
+@media(max-width: 768px){
+    aside{
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+    }
+    section{
+        grid-column: 1 / 3;
+    }
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: .5em;
+}
+
+.header{
+    background-color: #203864;
+    padding: 1em;
+}
+
+.logo{
+    background-color: #fff;
+    grid-column: 1 / 3;
+    
+}
+.gnb{
+    background-color:#fff;
+    grid-column: 3 / 10;
+}
+.util{
+    background-color: #fff;
+    grid-column: 10 / 13;
+}
+
+.main_visual{
+    background-color: #4cb7e5;
+    border: 1px solid #333;
+    height: calc(100vh - 100px);
+}
+
+.main_cert{
+    background-color:#2B71A6;
+    padding: 1em;
+}
+.cert_form{
+    grid-column: 4 / 10;
+    background-color: #fff;
+}
+
+.main_bbs{
+    background-color:#fff;
+    padding: 1em;
+}
+.res{
+    grid-column: 1 / 5;
+    border: 1px solid #ccc;
+}
+.certinfo{
+    grid-column: 5 / 9;
+    border: 1px solid #ccc;
+}
+.qna{
+    grid-column: 9 / 13;
+    border: 1px solid #ccc;
+}
+
+.main_about{
+    background-color: #3375A6;
+    padding: 1em;
+}
+.pic{
+    grid-column: 1 / 6;
+    background-color:#fff;
+}
+.txt{
+    grid-column: 6 / 13;
+    background-color:#fff;
+}
+
+.main_product{
+    background-color: #f0f0f0;
+    padding: 1em;
+}
+.galley_li_01{
+    grid-column: 1 / 4;
+    background-color:#fff;
+}
+.galley_li_02{
+    grid-column: 4 / 7;
+    background-color:#fff;
+}
+.galley_li_03{
+    grid-column: 7 / 10;
+    background-color:#fff;
+}
+.galley_li_04{
+    grid-column: 10 / 13;
+    background-color:#fff;
+}
+
+.footer{
+    background-color: #203864;
+}
