@@ -43,7 +43,7 @@
 
 .main_cert{
     background-color:#2B71A6;
-    padding: 1em;
+    padding: 5em;
 }
 .cert_form{
     grid-column: 4 / 10;
@@ -52,7 +52,7 @@
 
 .main_bbs{
     background-color:#fff;
-    padding: 1em;
+    padding: 5em;
 }
 .res{
     grid-column: 1 / 5;
@@ -69,7 +69,7 @@
 
 .main_about{
     background-color: #3375A6;
-    padding: 1em;
+    padding: 5em;
 }
 .pic{
     grid-column: 1 / 6;
@@ -82,7 +82,7 @@
 
 .main_product{
     background-color: #f0f0f0;
-    padding: 1em;
+    padding: 5em;
 }
 .galley_li_01{
     grid-column: 1 / 4;
@@ -103,7 +103,7 @@
 
 .footer{
     background-color: #203864;
-    padding: 1em;
+    padding: 5em;
 }
 .f_logo{
     background-color: #ccc;
