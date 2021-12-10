@@ -1,3 +1,39 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&display=swap');
+
+/* Default */
+*, :after, :before{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+html{
+    overflow-y: scroll;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+html, h1, h2, h3, h4, h5, h6, p, form, fieldset, img{
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
 @media(max-width: 768px){
     aside{
         grid-row: 4 / 5;
@@ -8,16 +44,26 @@
     }
 }
 
-*{margin: 0;padding: 0;}
+/* Container Setting */
 .container{
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    gap: .5em;
+    gap: 2.4rem;
 }
 
+/* Font System */
+.con_tit{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.con_sub_tit{
+    font-size: 1.8rem;
+}
+
+/* Header Area */
 .header{
     background-color: #203864;
     padding: 1em;
@@ -29,7 +75,7 @@
     
 }
 .gnb{
-    background-color:#fff;
+    background-color: #fff;
     grid-column: 3 / 10;
 }
 .util{
@@ -37,24 +83,26 @@
     grid-column: 10 / 13;
 }
 
+/* Main_visual Area */
 .main_visual{
-    background-color: #4cb7e5;
-    border: 1px solid #333;
-    height: calc(100vh - 100px);
+    background-color: #4b8de3;
+    height: calc(100vh - 10rem);
 }
 
+/* Main_cert Area */
 .main_cert{
-    background-color:#2B71A6;
-    padding: 5em;
+    background-color: #2b71a6;
+    padding: 5rem;
 }
 .cert_form{
     grid-column: 4 / 10;
     background-color: #fff;
 }
 
+/* Main_bbs Area */
 .main_bbs{
     background-color:#fff;
-    padding: 5em;
+    padding: 5rem;
 }
 .res{
     grid-column: 1 / 5;
@@ -69,60 +117,96 @@
     border: 1px solid #ccc;
 }
 
+/* Main_about Area */
 .main_about{
-    background-color: #3375A6;
-    padding: 5em;
+    background-color: #2b71a6;
+    padding: 5rem;
 }
-.pic{
-    grid-column: 1 / 6;
-    background-color:#fff;
+.main_about .pic{
+    grid-column: 1 / 7;
     position: relative;
 }
-.main_about_img1{
-    width: 83%;
+.main_about .pic .main_about_img1{
+    width: 80%;
 }
-.main_about_img2{
-    width:60%;
+.main_about .pic .main_about_img2{
+    width: 60%;
     position: absolute;
-    top: 70%;
+    bottom: 0;
     right: 0;
 }
-.txt{
-    grid-column: 6 / 13;
-    background-color:#fff;
+.main_about .txt{
+    grid-column: 7 / 13;
+    color: #fff;
+}
+.main_about .txt .btn_area a{
+    display: inline-block;
+    width: 144px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 4.8rem 4.8rem 4.8rem 0;
+}
+.main_about .txt .cs_wrap{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.main_about .txt .cs_wrap .area{
+    position: relative;
+    padding: 0 2.4rem;
+}
+.main_about .txt .cs_wrap .area:nth-child(1){
+    padding: 0;
+}
+.main_about .txt .cs_wrap .area::before{
+    content: "";
+    display: block;
+    border-left: 1px solid #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main_about .txt .cs_wrap .area:nth-child(1)::before{
+    display: none;
 }
 
+
+/* Main_product Area */
 .main_product{
     background-color: #f0f0f0;
-    padding: 5em;
+    padding: 5rem;
 }
 .galley_li_01{
     grid-column: 1 / 4;
-    background-color:#fff;
+    background-color: #fff;
 }
 .galley_li_02{
     grid-column: 4 / 7;
-    background-color:#fff;
+    background-color: #fff;
 }
 .galley_li_03{
     grid-column: 7 / 10;
-    background-color:#fff;
+    background-color: #fff;
 }
 .galley_li_04{
     grid-column: 10 / 13;
-    background-color:#fff;
+    background-color: #fff;
 }
 
+/* Footer Area */
 .footer{
     background-color: #203864;
-    padding: 5em;
+    padding: 5rem;
 }
 .f_logo{
     background-color: #ccc;
     grid-column: 1 / 3;
 }
 .f_info{
-    background-color:#ccc;
+    background-color: #ccc;
     grid-column: 3 / 10;
 }
 .fnb{
