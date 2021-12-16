@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&display=swap');
+
+/* Default */
+*, :after, :before{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+html{
+    overflow-y: scroll;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+html, h1, h2, h3, h4, h5, h6, p, form, fieldset, img{
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.main_about { position:relative;overflow:hidden;padding:50px 0px;height: 580px; }
+.main_about .bg { position:fixed;width:100%;height:100%;/*background:url(../img/main_about_bg.png) no-repeat center top;*/background-color:#3375A6;background-size:cover;top:0;z-index:-1 }
+.main_about .img { float:left;width:50%;position:relative }
+.main_about .img img:last-child { position:absolute;right:30px;top:280px }
+.main_about .text { float:right;width:48%; }
+.main_about .text h2 { font-size:90px;font-weight:300;line-height:1;margin:0 0 30px -90px }
+.main_about .text h2 strong { font-weight:700 }
+.main_about .text h3 { font-size:28px;font-weight:600;letter-spacing:-1px;margin:0 0 30px }
+
+.main_about .btn_area a { display:inline-block;width:144px;height:38px;line-height:36px;text-align:center;background:transparent;border:1px solid #ccc;border-radius:19px;font-size:1.1rem;  margin:15px 10px 0 0 }
+.main_about .btn_area a:hover { background:#005A9C;color:#fff;border-color:#fff }
+.main_about .em_title{ color:#fff;font-size:2.2rem;margin-left:90px }
+
+.main_about .cs { margin:  50px 0 0;width: 130% }
+.main_about .cs p{ font-size: 0.85rem;color: #fff }
+.main_about .cs .cs_area{ position: relative }
+.main_about .cs .cs_area::before{ content: '';display: block;width: 1px;height: 130px;background: #fff;position: absolute;top: 3px;right: 20px }
+
+.main_about .cs .fda_area{ position: relative }
+.main_about .cs .fda_area::before{ content: '';display: block;width: 1px;height: 130px;background: #fff;position: absolute;top: 3px;left: -20px }
+
+.main_about .cs .tel { font-size: 1rem;line-height: 26px }
+.main_about .cs .tel img{ margin-right: 8px }
+.main_about .cs .time { padding: 40px 0 0;position: relative }
+.main_about .cs .time::before { content: '';display: block;width: 16px;height: 1px;background: #fff;position: absolute;top: 26px;left: 4px }
+.main_about .cs .ce_area .ce_elec { margin-bottom: 12px }
+.main_about .cs .fda_area .fda_medic { margin-bottom: 12px }
